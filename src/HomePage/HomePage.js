@@ -108,7 +108,11 @@ function HomePage() {
   };
 
   useEffect(() => {
+<<<<<<< HEAD
     axios.get('/budget-data.json')
+=======
+    axios.get('http://localhost:3000/budget')
+>>>>>>> main
       .then((res) => {
         const updatedData = res.data.myBudget.map((item) => ({
           title: item.title,
